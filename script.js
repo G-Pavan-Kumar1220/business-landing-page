@@ -187,3 +187,116 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+// Products Section JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize products section
+  initProductsSection();
+});
+
+function initProductsSection() {
+  const productsGrid = document.getElementById('productsGrid');
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const productSearch = document.getElementById('productSearch');
+  const viewAllBtn = document.getElementById('viewAllBtn');
+  const quickViewModal = document.getElementById('quickViewModal');
+  const closeModalBtn = document.getElementById('closeModal');
+  const modalBody = document.getElementById('modalBody');
+  const quickViewButtons = document.querySelectorAll('.quick-view-btn');
+  const cartButtons = document.querySelectorAll('.cart-btn');
+  const detailsButtons = document.querySelectorAll('.details-btn');
+  
+  let currentFilter = 'all';
+  
+  // Initialize Intersection Observer for animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+  
+  const productObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        productObserver.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+  
+  // Observe all product cards
+  document.querySelectorAll('.product-card').forEach(card => {
+    productObserver.observe(card);
+  });
+  
+  // Filter products
+  function filterProducts(category) {
+    const productCards = document.querySelectorAll('.product-card');
+    
+    productCards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+      
+      if (category === 'all' || cardCategory === category) {
+        card.style.display = 'flex';
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 10);
+      } else {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+          card.style.display = 'none';
+        }, 300);
+      }
+    });
+    
+    // Update active filter button
+    filterButtons.forEach(btn => {
+      btn.classList.remove('active');
+      if (btn.getAttribute('data-filter') === category) {
+        btn.classList.add('active');
+      }
+    });
+    
+    currentFilter = category;
+    
+    // Save filter state in URL
+    history.pushState(null, null, `#products?filter=${category}`);
+  }
+  
+  // Search products
+  function searchProducts(query) {
+    const productCards = document.querySelectorAll('.product-card');
+    const searchTerm = query.toLowerCase().trim();
+    
+    if (!searchTerm) {
+      // If search is empty, show filtered products
+      filterProducts(currentFilter);
+      return;
+    }
+    
+    productCards.forEach(card => {
+      const title = card.querySelector('.product-title').textContent.toLowerCase();
+      const description = card.querySelector('.product-description').textContent.toLowerCase();
+      const category = card.querySelector('.product-category').textContent.toLowerCase();
+      
+      if (title.includes(searchTerm) || 
+          description.includes(searchTerm) || 
+          category.includes(searchTerm)) {
+        card.style.display = 'flex';
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 10);
+      } else {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+          card.style.display = 'none';
+        }, 300);
+      }
+    });
+  };
+  
+}

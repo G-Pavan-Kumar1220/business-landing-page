@@ -110,15 +110,7 @@
   </nav>
 
       <!-- Desktop Navigation -->
-      <nav class="desktop-nav">
-        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
-        <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
-        <a href="#products" class="nav-link"><i class="fas fa-box"></i> Products</a>
-        <a href="#services" class="nav-link"><i class="fas fa-cogs"></i> Services</a>
-        <a href="#dealers" class="nav-link"><i class="fas fa-certificate"></i> Dealers</a>
-        <a href="#contact" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a>
-        <button class="cta-btn"><i class="fas fa-tags"></i> Get Quote</button>
-      </nav>
+     
 
       <!-- Mobile Menu Toggle -->
       <button class="mobile-toggle" id="mobileToggle">
@@ -329,7 +321,7 @@
         
         <div class="about-right">
           <div class="image-card">
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" alt="Power Solutions Factory">
+            <img src="https://www.simplyacademy.com/wp-content/uploads/2021/08/a-student-benefitting-from-work-experience.jpg" alt="Power Solutions Factory">
             <div class="experience-badge">
               <span>15+ Years</span>
               <small>Of Excellence</small>
@@ -341,31 +333,593 @@
   </section>
 
   <!-- Products Section -->
-  <section class="products-section" id="products">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">OUR PRODUCT RANGE</span>
-        <h2>Premium Power Equipment & <span class="highlight">Energy Solutions</span></h2>
-        <p>Comprehensive range of high-quality products designed for reliability and performance</p>
+    <section class="products-section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">
+        <i class="fas fa-bolt"></i>
+        OUR PRODUCT RANGE
+      </span>
+      <h2>Premium <span class="highlight">Power Solutions</span> for Every Need</h2>
+      <p>Discover our comprehensive range of high-performance energy solutions engineered for reliability and efficiency</p>
+    </div>
+    
+    <!-- Product Filters -->
+    <div class="product-filters-container">
+      <div class="filter-search">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="productSearch" placeholder="Search products...">
+        </div>
       </div>
-      
       <div class="product-filters">
-        <button class="filter-btn active" data-filter="all">All Products</button>
-        <button class="filter-btn" data-filter="inverters">Inverters</button>
-        <button class="filter-btn" data-filter="batteries">Batteries</button>
-        <button class="filter-btn" data-filter="solar">Solar Solutions</button>
-        <button class="filter-btn" data-filter="ups">UPS Systems</button>
-      </div>
-      
-      <div class="products-grid">
-        <!-- Product cards will be populated by JavaScript -->
-      </div>
-      
-      <div class="section-footer">
-        <a href="#products" class="btn outline"><i class="fas fa-boxes"></i> View All Products</a>
+        <button class="filter-btn active" data-filter="all">
+          <i class="fas fa-boxes"></i>
+          <span>All Products</span>
+          <span class="filter-count">8</span>
+        </button>
+        <button class="filter-btn" data-filter="inverters">
+          <i class="fas fa-bolt"></i>
+          <span>Inverters</span>
+          <span class="filter-count">3</span>
+        </button>
+        <button class="filter-btn" data-filter="batteries">
+          <i class="fas fa-car-battery"></i>
+          <span>Batteries</span>
+          <span class="filter-count">2</span>
+        </button>
+        <button class="filter-btn" data-filter="solar">
+          <i class="fas fa-solar-panel"></i>
+          <span>Solar</span>
+          <span class="filter-count">2</span>
+        </button>
+        <button class="filter-btn" data-filter="ups">
+          <i class="fas fa-server"></i>
+          <span>UPS Systems</span>
+          <span class="filter-count">1</span>
+        </button>
       </div>
     </div>
-  </section>
+    
+    <!-- Product Grid -->
+    <div class="products-grid" id="productsGrid">
+      <!-- Product 1: Premium Inverter -->
+      <div class="product-card" data-category="inverters" data-price="18999">
+        <div class="product-image">
+          <img src="https://m.media-amazon.com/images/I/71yukSgo04L._AC_.jpg" alt="Pure Sine Wave Inverter">
+          <div class="product-badge best-seller">
+            <i class="fas fa-crown"></i>
+            <span>Best Seller</span>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" data-id="1">
+              <i class="fas fa-eye"></i>
+              Quick View
+            </button>
+          </div>
+        </div>
+        <div class="product-content">
+          <span class="product-category">
+            <i class="fas fa-bolt"></i>
+            Inverter
+          </span>
+          <h3 class="product-title">Pure Sine Wave Inverter 1500VA</h3>
+          <p class="product-description">Advanced inverter with intelligent charging, LCD display, and pure sine wave output for sensitive electronics.</p>
+          
+          <div class="product-features">
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              1500VA Capacity
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Pure Sine Wave
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Intelligent Charging
+            </span>
+          </div>
+          
+          <div class="product-rating">
+            <div class="stars">
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star-half-alt active"></i>
+            </div>
+            <span class="rating-text">4.8/5 (128 reviews)</span>
+          </div>
+          
+          <div class="product-footer">
+            <div class="product-actions">
+              <button class="action-btn cart-btn" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Get Quote</span>
+              </button>
+              <button class="action-btn details-btn" data-id="1">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product 2: Tubular Battery -->
+      <div class="product-card" data-category="batteries" data-price="23999">
+        <div class="product-image">
+          <img src="https://m.media-amazon.com/images/I/51LTV-GvNiL._AC_UF1000,1000_QL80_.jpg" alt="Tubular Battery">
+          <div class="product-badge premium">
+            <i class="fas fa-gem"></i>
+            <span>Premium</span>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" data-id="2">
+              <i class="fas fa-eye"></i>
+              Quick View
+            </button>
+          </div>
+        </div>
+        <div class="product-content">
+          <span class="product-category">
+            <i class="fas fa-car-battery"></i>
+            Battery
+          </span>
+          <h3 class="product-title">Tubular Battery 150Ah</h3>
+          <p class="product-description">High-performance tubular battery with 1800+ cycles and 5-year warranty for long-lasting power backup.</p>
+          
+          <div class="product-features">
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              150Ah Capacity
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              5 Year Warranty
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Maintenance Free
+            </span>
+          </div>
+          
+          <div class="product-rating">
+            <div class="stars">
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+            </div>
+            <span class="rating-text">4.9/5 (96 reviews)</span>
+          </div>
+          
+          <div class="product-footer">
+           
+            <div class="product-actions">
+              <button class="action-btn cart-btn" data-id="2">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Get Quote</span>
+              </button>
+              <button class="action-btn details-btn" data-id="2">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product 3: Solar Panel -->
+      <div class="product-card" data-category="solar" data-price="21999">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Solar Panel">
+          <div class="product-badge eco-friendly">
+            <i class="fas fa-leaf"></i>
+            <span>Eco Friendly</span>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" data-id="3">
+              <i class="fas fa-eye"></i>
+              Quick View
+            </button>
+          </div>
+        </div>
+        <div class="product-content">
+          <span class="product-category">
+            <i class="fas fa-solar-panel"></i>
+            Solar
+          </span>
+          <h3 class="product-title">Solar Panel 540W Mono PERC</h3>
+          <p class="product-description">High-efficiency monocrystalline solar panel with PERC technology and 25-year performance warranty.</p>
+          
+          <div class="product-features">
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              540W Output
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Mono PERC Cells
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Weather Resistant
+            </span>
+          </div>
+          
+          <div class="product-rating">
+            <div class="stars">
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="rating-text">4.7/5 (87 reviews)</span>
+          </div>
+          
+          <div class="product-footer">
+            
+            <div class="product-actions">
+              <button class="action-btn cart-btn" data-id="3">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Get Quote</span>
+              </button>
+              <button class="action-btn details-btn" data-id="3">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product 4: Online UPS -->
+      <div class="product-card" data-category="ups" data-price="42999">
+        <div class="product-image">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.6Xv7hNtz7epXz4yc_xMq4QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Online UPS">
+          <div class="product-badge enterprise">
+            <i class="fas fa-building"></i>
+            <span>Enterprise</span>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" data-id="4">
+              <i class="fas fa-eye"></i>
+              Quick View
+            </button>
+          </div>
+        </div>
+        <div class="product-content">
+          <span class="product-category">
+            <i class="fas fa-server"></i>
+            UPS System
+          </span>
+          <h3 class="product-title">Online UPS 3KVA</h3>
+          <p class="product-description">Enterprise-grade online UPS with pure sine wave output and network management capabilities.</p>
+          
+          <div class="product-features">
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              3KVA Capacity
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Online Technology
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Pure Sine Wave
+            </span>
+          </div>
+          
+          <div class="product-rating">
+            <div class="stars">
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+            </div>
+            <span class="rating-text">4.9/5 (64 reviews)</span>
+          </div>
+          
+          <div class="product-footer">
+            
+            <div class="product-actions">
+              <button class="action-btn cart-btn" data-id="4">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Get Quote</span>
+              </button>
+              <button class="action-btn details-btn" data-id="4">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product 5: Hybrid Inverter -->
+      <div class="product-card" data-category="inverters" data-price="54999">
+        <div class="product-image">
+          <img src="https://laravelafrimartnew.s3.af-south-1.amazonaws.com/upload/product/1824474538409360_phpqvUdqa" alt="Hybrid Inverter">
+          <div class="product-badge new">
+            <i class="fas fa-rocket"></i>
+            <span>New</span>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" data-id="5">
+              <i class="fas fa-eye"></i>
+              Quick View
+            </button>
+          </div>
+        </div>
+        <div class="product-content">
+          <span class="product-category">
+            <i class="fas fa-bolt"></i>
+            Hybrid Inverter
+          </span>
+          <h3 class="product-title">Hybrid Inverter 5KVA</h3>
+          <p class="product-description">Smart hybrid inverter with solar priority, grid support, and Wi-Fi monitoring for optimal energy management.</p>
+          
+          <div class="product-features">
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              5KVA Hybrid
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Solar Priority
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              APP Control
+            </span>
+          </div>
+          
+          <div class="product-rating">
+            <div class="stars">
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="rating-text">4.8/5 (42 reviews)</span>
+          </div>
+          
+          <div class="product-footer">
+            
+            <div class="product-actions">
+              <button class="action-btn cart-btn" data-id="5">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Get Quote</span>
+              </button>
+              <button class="action-btn details-btn" data-id="5">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product 6: Lithium Battery -->
+      <div class="product-card" data-category="batteries" data-price="44999">
+        <div class="product-image">
+          <img src="https://th.bing.com/th/id/OIP.LY1SUYGwCpaRS7VUvxXf5gHaHM?w=178&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Lithium Battery">
+          <div class="product-badge best-seller">
+            <i class="fas fa-crown"></i>
+            <span>Best Seller</span>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" data-id="6">
+              <i class="fas fa-eye"></i>
+              Quick View
+            </button>
+          </div>
+        </div>
+        <div class="product-content">
+          <span class="product-category">
+            <i class="fas fa-battery-full"></i>
+            Lithium Battery
+          </span>
+          <h3 class="product-title">LiFePO4 Battery 100Ah</h3>
+          <p class="product-description">Advanced lithium iron phosphate battery with 6000+ cycles and 10-year warranty for modern energy needs.</p>
+          
+          <div class="product-features">
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              LiFePO4 Technology
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              100Ah Capacity
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Fast Charging
+            </span>
+          </div>
+          
+          <div class="product-rating">
+            <div class="stars">
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+            </div>
+            <span class="rating-text">4.9/5 (78 reviews)</span>
+          </div>
+          
+          <div class="product-footer">
+          
+            <div class="product-actions">
+              <button class="action-btn cart-btn" data-id="6">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Get Quote</span>
+              </button>
+              <button class="action-btn details-btn" data-id="6">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product 7: Solar Inverter -->
+      <div class="product-card" data-category="solar" data-price="64999">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" alt="Solar Inverter">
+          <div class="product-badge premium">
+            <i class="fas fa-gem"></i>
+            <span>Premium</span>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" data-id="7">
+              <i class="fas fa-eye"></i>
+              Quick View
+            </button>
+          </div>
+        </div>
+        <div class="product-content">
+          <span class="product-category">
+            <i class="fas fa-solar-panel"></i>
+            Solar Inverter
+          </span>
+          <h3 class="product-title">Solar Inverter 5KW</h3>
+          <p class="product-description">Grid-tie solar inverter with dual MPPT, IP65 protection, and remote monitoring for maximum efficiency.</p>
+          
+          <div class="product-features">
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              5KW Output
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Dual MPPT
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Remote Monitoring
+            </span>
+          </div>
+          
+          <div class="product-rating">
+            <div class="stars">
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="rating-text">4.8/5 (56 reviews)</span>
+          </div>
+          
+          <div class="product-footer">
+          
+            <div class="product-actions">
+              <button class="action-btn cart-btn" data-id="7">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Get Quote</span>
+              </button>
+              <button class="action-btn details-btn" data-id="7">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product 8: Inverter 850VA -->
+      <div class="product-card" data-category="inverters" data-price="12999">
+        <div class="product-image">
+          <img src="https://m.media-amazon.com/images/I/517nsutOMUL._SL1000_.jpg" alt="Inverter 850VA">
+          <div class="product-badge value">
+            <i class="fas fa-percentage"></i>
+            <span>Best Value</span>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" data-id="8">
+              <i class="fas fa-eye"></i>
+              Quick View
+            </button>
+          </div>
+        </div>
+        <div class="product-content">
+          <span class="product-category">
+            <i class="fas fa-bolt"></i>
+            Inverter
+          </span>
+          <h3 class="product-title">Home Inverter 850VA</h3>
+          <p class="product-description">Compact and efficient home inverter with digital display and automatic voltage regulation for basic needs.</p>
+          
+          <div class="product-features">
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              850VA Capacity
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Digital Display
+            </span>
+            <span class="feature">
+              <i class="fas fa-check-circle"></i>
+              Auto Voltage Reg.
+            </span>
+          </div>
+          
+          <div class="product-rating">
+            <div class="stars">
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star active"></i>
+              <i class="fas fa-star-half-alt active"></i>
+            </div>
+            <span class="rating-text">4.6/5 (213 reviews)</span>
+          </div>
+          
+          <div class="product-footer">
+           
+            <div class="product-actions">
+              <button class="action-btn cart-btn" data-id="8">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Get Quote</span>
+              </button>
+              <button class="action-btn details-btn" data-id="8">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- View All Button -->
+    <div class="section-footer">
+      <button class="btn btn-primary btn-large view-all-btn" id="viewAllBtn">
+        <i class="fas fa-eye"></i>
+        <span>View All Products</span>
+      </button>
+      <a href="#contact" class="btn btn-outline btn-large contact-expert-btn">
+        <i class="fas fa-headset"></i>
+        <span>Consult Our Expert</span>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-body" id="modalBody">
+        <!-- Content will be loaded by JavaScript -->
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- CTA Section -->
   <section class="cta-section">
