@@ -1,4 +1,4 @@
-/* ================= CSS RESET & BASE ================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,17 +25,17 @@ body.no-scroll {
     overflow: hidden;
 }
 
-/* ================= PROFESSIONAL COLOR PALETTE ================= */
+
 :root {
-    --primary: #2563EB;      /* Professional Blue */
+    --primary: #2563EB;      
     --primary-dark: #1D4ED8;
     --primary-light: #3B82F6;
-    --secondary: #059669;    /* Professional Green */
+    --secondary: #059669;    
     --secondary-dark: #047857;
-    --accent: #F59E0B;       /* Accent Amber */
-    --dark: #111827;         /* Dark Gray */
+    --accent: #F59E0B;     
+    --dark: #111827;         
     --dark-light: #374151;
-    --light: #F9FAFB;        /* Light Gray */
+    --light: #F9FAFB;       
     --gray: #6B7280;
     --gray-light: #D1D5DB;
     --white: #FFFFFF;
@@ -264,7 +264,7 @@ a {
     transform: translateY(-1px);
 }
 
-/* ================= HEADER & NAVIGATION ================= */
+
 .main-header {
     background: var(--white);
     box-shadow: var(--shadow-sm);
@@ -1938,19 +1938,6 @@ a {
     }
 }
 
-/* Add floating elements to HTML
-const floatingElements = document.createElement('div');
-floatingElements.className = 'floating-elements';
-for (let i = 1; i <= 3; i++) {
-    const element = document.createElement('div');
-    element.className = `floating-element floating-${i}`;
-    floatingElements.appendChild(element);
-}
-
-const productsSection = document.querySelector('.products-section');
-if (productsSection) {
-    productsSection.appendChild(floatingElements);
-} */
 
 /* ================= SERVICES SECTION ================= */
 .services-section {
