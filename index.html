@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power Solutions Factory | Premium Energy Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+<div class="top-bar">
+    <div class="container">
+      <div class="top-left">
+        <span><i class="fas fa-phone-alt"></i> +91-123456789</span>
+        <span><i class="fas fa-envelope"></i> info@powersolutionsfactory.in</span>
+      </div>
+      <div class="top-right">
+        <span class="response"><i class="fas fa-bolt"></i> 94% Response Rate</span>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <h1>PSF</h1>
+        <div class="brand-text">
+          <span class="company">Power Solutions Factory</span>
+          <span class="tagline"><i class="fas fa-bolt"></i> Powering Tomorrow, Today</span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation (Single Line) -->
+      <nav class="desktop-nav">
+        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+        <a href="#products" class="nav-link"><i class="fas fa-box"></i> Products</a>
+        <a href="#services" class="nav-link"><i class="fas fa-cogs"></i> Services</a>
+        <a href="#dealers" class="nav-link"><i class="fas fa-certificate"></i> Dealers</a>
+        <a href="#contact" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a>
+        <button class="cta-btn"><i class="fas fa-tags"></i> Get Quote</button>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- Mobile Navigation Menu -->
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <div class="mobile-logo">
+        <h1>PSF</h1>
+      </div>
+      <button class="close-menu" id="closeMenu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="#about" class="mobile-nav-link">
+        <i class="fas fa-info-circle"></i>
+        <span>About Us</span>
+      </a>
+      <a href="#products" class="mobile-nav-link">
+        <i class="fas fa-box"></i>
+        <span>Products</span>
+      </a>
+      <a href="#services" class="mobile-nav-link">
+        <i class="fas fa-cogs"></i>
+        <span>Services</span>
+      </a>
+      <a href="#dealers" class="mobile-nav-link">
+        <i class="fas fa-certificate"></i>
+        <span>Dealers</span>
+      </a>
+      <a href="#contact" class="mobile-nav-link">
+        <i class="fas fa-phone-alt"></i>
+        <span>Contact Us</span>
+      </a>
+    </div>
+    
+    <div class="mobile-nav-footer">
+      <a href="#contact" class="btn btn-primary full-width">
+        <i class="fas fa-tags"></i> Get Best Price
+      </a>
+      <div class="mobile-contact">
+        <p><i class="fas fa-phone-alt"></i> +91-123456789</p>
+        <p><i class="fas fa-envelope"></i> info@powersolutionsfactory.in</p>
+      </div>
+    </div>
+  </nav>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+        <a href="#products" class="nav-link"><i class="fas fa-box"></i> Products</a>
+        <a href="#services" class="nav-link"><i class="fas fa-cogs"></i> Services</a>
+        <a href="#dealers" class="nav-link"><i class="fas fa-certificate"></i> Dealers</a>
+        <a href="#contact" class="nav-link"><i class="fas fa-phone-alt"></i> Contact</a>
+        <button class="cta-btn"><i class="fas fa-tags"></i> Get Quote</button>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" id="mobileToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Mobile Navigation -->
+      <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+          <div class="mobile-logo">
+            <div class="logo-icon">PSF</div>
+            <div class="brand-text">
+              <span class="company">Power Solutions Factory</span>
+            </div>
+          </div>
+          <button class="close-menu" id="closeMenu">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="mobile-nav-links">
+          <a href="#home" class="mobile-nav-link">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+          <a href="#about" class="mobile-nav-link">
+            <i class="fas fa-info-circle"></i>
+            <span>About Us</span>
+          </a>
+          <a href="#products" class="mobile-nav-link">
+            <i class="fas fa-box"></i>
+            <span>Products</span>
+          </a>
+          <a href="#services" class="mobile-nav-link">
+            <i class="fas fa-cogs"></i>
+            <span>Services</span>
+          </a>
+          <a href="#dealers" class="mobile-nav-link">
+            <i class="fas fa-certificate"></i>
+            <span>Dealers</span>
+          </a>
+          <a href="#contact" class="mobile-nav-link">
+            <i class="fas fa-phone-alt"></i>
+            <span>Contact Us</span>
+          </a>
+        </div>
+        
+        <div class="mobile-nav-footer">
+          <a href="#contact" class="btn primary full-width">
+            <i class="fas fa-tags"></i> Get Best Price
+          </a>
+          <div class="mobile-contact">
+            <p><i class="fas fa-phone-alt"></i> +91-123456789</p>
+            <p><i class="fas fa-envelope"></i> info@powersolutionsfactory.in</p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Slider -->
+  <section class="hero-slider" id="home">
+    <div class="hero-slide active">
+      <div class="slide-bg" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="badge"><i class="fas fa-award"></i> Premium Quality Products</span>
+          <h1>High-Performance <span class="highlight">Energy Solutions</span></h1>
+          <p>Advanced technology power storage systems for residential, commercial, and industrial applications</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn primary"><i class="fas fa-tags"></i> Get Best Price Now</a>
+            <a href="#products" class="btn secondary"><i class="fas fa-eye"></i> View Products</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <div class="slide-bg" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="badge"><i class="fas fa-leaf"></i> Smart Green Energy</span>
+          <h1>Sustainable <span class="highlight">Power Systems</span></h1>
+          <p>Eco-friendly renewable energy solutions for a cleaner tomorrow</p>
+          <div class="hero-buttons">
+            <a href="#products" class="btn primary"><i class="fas fa-solar-panel"></i> Solar Solutions</a>
+            <a href="#contact" class="btn secondary"><i class="fas fa-headset"></i> Free Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-indicators">
+      <span class="indicator active"></span>
+      <span class="indicator"></span>
+    </div>
+    
+    <button class="nav prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="nav next"><i class="fas fa-chevron-right"></i></button>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3><span class="counter" data-target="15">0</span>+</h3>
+          <p>Years Experience</p>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3><span class="counter" data-target="5000">0</span>+</h3>
+          <p>Happy Customers</p>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3><span class="counter" data-target="500">0</span>+</h3>
+          <p>Dealers Nationwide</p>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-boxes"></i>
+          </div>
+          <h3><span class="counter" data-target="50">0</span>+</h3>
+          <p>Product Range</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">ABOUT OUR COMPANY</span>
+        <h2>India's Trusted Manufacturer of <span class="highlight">Premium Power Solutions</span></h2>
+        <p>Leading the energy revolution with innovative and reliable power systems</p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-left">
+          <div class="feature-grid">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="feature-text">
+                <h4>ISO 9001:2015 Certified</h4>
+                <p>Quality management system certified</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="feature-text">
+                <h4>500+ Dealers</h4>
+                <p>Pan-India authorized dealer network</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="feature-text">
+                <h4>15+ Years Experience</h4>
+                <p>Industry expertise and knowledge</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="feature-text">
+                <h4>BIS Approved</h4>
+                <p>Government approved quality standards</p>
+              </div>
+            </div>
+          </div>
+          
+          <p class="about-description">
+            We are a leading manufacturer of advanced power and energy solutions, 
+            delivering high-performance inverters, batteries, UPS systems, and solar products 
+            to homes and businesses across India. Our commitment to innovation, reliability, 
+            and sustainability makes us the preferred choice for dependable power solutions.
+          </p>
+          
+          <div class="about-buttons">
+            <a href="#contact" class="btn primary"><i class="fas fa-download"></i> Download Brochure</a>
+            <a href="#about" class="btn secondary"><i class="fas fa-play-circle"></i> Watch Our Story</a>
+          </div>
+        </div>
+        
+        <div class="about-right">
+          <div class="image-card">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" alt="Power Solutions Factory">
+            <div class="experience-badge">
+              <span>15+ Years</span>
+              <small>Of Excellence</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">OUR PRODUCT RANGE</span>
+        <h2>Premium Power Equipment & <span class="highlight">Energy Solutions</span></h2>
+        <p>Comprehensive range of high-quality products designed for reliability and performance</p>
+      </div>
+      
+      <div class="product-filters">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="inverters">Inverters</button>
+        <button class="filter-btn" data-filter="batteries">Batteries</button>
+        <button class="filter-btn" data-filter="solar">Solar Solutions</button>
+        <button class="filter-btn" data-filter="ups">UPS Systems</button>
+      </div>
+      
+      <div class="products-grid">
+        <!-- Product cards will be populated by JavaScript -->
+      </div>
+      
+      <div class="section-footer">
+        <a href="#products" class="btn outline"><i class="fas fa-boxes"></i> View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Need Professional Power Solutions?</h2>
+        <p>Get expert consultation and the best pricing for your specific requirements</p>
+        <a href="#contact" class="btn primary"><i class="fas fa-phone-alt"></i> Request Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">OUR SERVICES</span>
+        <h2>Comprehensive <span class="highlight">Support Services</span></h2>
+        <p>End-to-end services to ensure optimal performance and longevity of your power systems</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Installation Services</h3>
+          <p>Professional installation by certified engineers with system optimization</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <h3>Annual Maintenance</h3>
+          <p>Preventive maintenance programs ensuring consistent peak efficiency</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h3>Site Survey</h3>
+          <p>Precision assessment and customized recommendations for your location</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Warranty Services</h3>
+          <p>Fast, hassle-free warranty handling using genuine components</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Training Programs</h3>
+          <p>Professional system operation & safety training for teams</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>Round-the-clock expert support ensuring uninterrupted operations</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dealer Network Section -->
+  <section class="dealer-section" id="dealers">
+    <div class="container">
+      <div class="dealer-content">
+        <div class="dealer-text">
+          <span class="section-subtitle">BUSINESS OPPORTUNITY</span>
+          <h2>Join Our Trusted <span class="highlight">Dealer Network</span></h2>
+          <p>Partner with India's leading power solutions manufacturer and grow your business with quality products, competitive margins, and comprehensive support.</p>
+          <ul class="dealer-benefits">
+            <li><i class="fas fa-check-circle"></i> Attractive Dealer Margins</li>
+            <li><i class="fas fa-check-circle"></i> Marketing Support</li>
+            <li><i class="fas fa-check-circle"></i> Training Programs</li>
+            <li><i class="fas fa-check-circle"></i> Technical Support</li>
+          </ul>
+          <a href="#contact" class="btn primary"><i class="fas fa-handshake"></i> Become a Dealer</a>
+        </div>
+        <div class="dealer-form">
+          <h3>Dealer Inquiry Form</h3>
+          <form id="dealerForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="text" placeholder="City/State" required>
+            <textarea placeholder="Business Details & Experience" rows="3"></textarea>
+            <button type="submit" class="btn primary">Submit Application</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">GET IN TOUCH</span>
+        <h2>Request a <span class="highlight">Quote Today</span></h2>
+        <p>Share your requirements and our experts will contact you with the best solution</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-form">
+          <form id="quoteForm">
+            <div class="form-group">
+              <input type="text" placeholder="Full Name *" required>
+              <input type="email" placeholder="Email Address *" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Phone Number *" required>
+              <select required>
+                <option value="">Select Product Interest</option>
+                <option>Inverters</option>
+                <option>Batteries</option>
+                <option>UPS Systems</option>
+                <option>Solar Solutions</option>
+                <option>All Products</option>
+              </select>
+            </div>
+            <textarea placeholder="Describe your requirements..." rows="5"></textarea>
+            <button type="submit" class="btn primary"><i class="fas fa-paper-plane"></i> Get Best Price Now</button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4>Our Location</h4>
+              <p>Hyderabad, Telangana, India</p>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4>Contact Number</h4>
+              <p>+91 1234567890</p>
+              <p>+91 9876543210</p>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h4>Email Address</h4>
+              <p>info@powersolutionsfactory.in</p>
+              <p>sales@powersolutionsfactory.in</p>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="info-content">
+              <h4>Working Hours</h4>
+              <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+              <p>Sunday: Emergency Support Only</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <h3><span class="logo-accent">PSF</span></h3>
+            <h4>Power Solutions Factory</h4>
+          </div>
+          <p class="footer-description">
+            Delivering reliable power, energy-efficient solutions, and nationwide support 
+            for homes, businesses, and industries across India.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Our Products</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Inverters</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Batteries</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> UPS Systems</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Solar Solutions</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Lithium Batteries</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get updates on new products and special offers</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="certifications">
+            <span class="cert-badge"><i class="fas fa-certificate"></i> ISO 9001:2015</span>
+            <span class="cert-badge"><i class="fas fa-award"></i> BIS Approved</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2024 Power Solutions Factory. All Rights Reserved.</p>
+        </div>
+        <div class="footer-links-bottom">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/911234567890" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
